@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blanc"
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/workingsTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/noir"
+            android:textAlignment="textEnd"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@id/resultTV"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="end" />
+        <TextView
+            android:id="@+id/resultTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/noir"
+            android:textAlignment="textEnd"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="end" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- line from AC button to operator divide. -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        style="@style/buttonRow">
+
+        <Button
+            style="@style/buttonNumber"
+            android:onClick="allClearAction"
+            android:textColor="@color/purple"
+            android:text="@string/action_initialise"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            style="@style/buttonNumber"
+            android:onClick="backSpaceAction"
+            android:textColor="@color/purple"
+            android:text="@string/action_reset"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            style="@style/buttonNumber"
+            android:text=""/>
+
+        <Button
+            style="@style/buttonOperator"
+            android:text="@string/operator_divided"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- line from 7 to operator soustract. -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        style="@style/buttonRow">
+
+        <Button
+            style="@style/buttonNumber"
+            android:text="@string/number_7"/>
+
+        <Button
+            style="@style/buttonNumber"
+            android:text="@string/number_8"/>
+
+        <Button
+            style="@style/buttonNumber"
+            android:text="@string/number_9"/>
+
+        <Button
+            style="@style/buttonOperator"
+            android:text="@string/operator_soustraction"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- line from 4 to operator additional. -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        style="@style/buttonRow">
+
+        <Button
+            style="@style/buttonNumber"
+            android:text="@string/number_4"/>
+
+        <Button
+            style="@style/buttonNumber"
+            android:text="@string/number_5"/>
+
+        <Button
+            style="@style/buttonNumber"
+            android:text="@string/number_6"/>
+
+        <Button
+            style="@style/buttonOperator"
+            android:text="@string/operator_add"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- line from 1 to operator multiple. -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        style="@style/buttonRow">
+
+        <Button
+            style="@style/buttonNumber"
+            android:text="@string/number_1"/>
+
+        <Button
+            style="@style/buttonNumber"
+            android:text="@string/number_2"/>
+
+        <Button
+            style="@style/buttonNumber"
+            android:text="@string/number_3"/>
+
+        <Button
+            style="@style/buttonOperator"
+            android:text="@string/operator_multiple"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- line from decimal to operator equals. -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        style="@style/buttonRow">
+
+        <Button
+            style="@style/buttonNumber"
+            android:text="@string/operator_Decimal"/>
+
+        <Button
+            style="@style/buttonNumber"
+            android:text="@string/number_0"/>
+
+        <Button
+            style="@style/buttonNumber"
+            android:layout_weight="2"
+            android:background="@color/orange"
+            android:textColor="@color/blanc"
+            android:onClick="equalsAction"
+            android:text="@string/operator_equals" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

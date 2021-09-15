@@ -1,0 +1,27 @@
+<resources>
+    <!-- Application name. -->
+    <string name="app_name">Lieth</string>
+    <!-- Number. -->
+    <string name="number_9">9</string>
+    <string name="number_8">8</string>
+    <string name="number_7">7</string>
+    <string name="number_6">6</string>
+    <string name="number_5">5</string>
+    <string name="number_4">4</string>
+    <string name="number_3">3</string>
+    <string name="number_2">2</string>
+    <string name="number_1">1</string>
+    <string name="number_0">0</string>
+    <!-- Operator -->
+    <string name="operator_divided">/</string>
+    <string name="operator_multiple">*</string>
+    <string name="operator_add">+</string>
+    <string name="operator_soustraction">-</string>
+    <string name="operator_equals">=</string>
+    <string name="operator_Decimal">.</string>
+    <!-- Action -->
+    <string name="action_initialise">AC</string>
+    <string name="action_reset">CE</string>
+
+
+</resources>
